@@ -1,5 +1,5 @@
 //
-//  MSRequestManager.h
+//  MSDataManager.h
 //  HealthHelper
 //
 //  Created by Maksym Savisko on 4/7/17.
@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MSRequestManagerProtocols.h"
+#import "MSDataManagerProtocols.h"
 
-@interface MSRequestManager : NSObject <MSRequestManagerProtocol>
+@interface MSDataManager : NSObject <MSDataManagerProtocol>
 
 // clue for improper use (produces compile time error)
 + (instancetype)alloc __attribute__((unavailable("alloc not available, call sharedInstance instead")));

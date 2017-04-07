@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08817F411E97D198001BF679 /* MSRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 08817F401E97D198001BF679 /* MSRequestManager.m */; };
+		08817F441E97D280001BF679 /* MSRequestToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 08817F431E97D280001BF679 /* MSRequestToken.m */; };
+		08817F4A1E97D3BD001BF679 /* MSRequestResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 08817F491E97D3BD001BF679 /* MSRequestResponse.m */; };
+		08C4C2721E97C71000C0CE77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C4C2681E97C71000C0CE77 /* AppDelegate.m */; };
+		08C4C2731E97C71000C0CE77 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C4C26B1E97C71000C0CE77 /* ViewController.m */; };
+		08C4C2741E97C71000C0CE77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08C4C26D1E97C71000C0CE77 /* Assets.xcassets */; };
+		08C4C2761E97C71000C0CE77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C4C26F1E97C71000C0CE77 /* LaunchScreen.storyboard */; };
+		08C4C2771E97C71000C0CE77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C4C2701E97C71000C0CE77 /* main.m */; };
+		08C4C2781E97C71000C0CE77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C4C2711E97C71000C0CE77 /* Main.storyboard */; };
+		ECD90B03EE4DAB3AF5537740 /* libPods-HealthHelper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E293BBF818D0AD957A737451 /* libPods-HealthHelper.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08817F3F1E97D198001BF679 /* MSRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSRequestManager.h; sourceTree = "<group>"; };
+		08817F401E97D198001BF679 /* MSRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSRequestManager.m; sourceTree = "<group>"; };
+		08817F421E97D280001BF679 /* MSRequestToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSRequestToken.h; sourceTree = "<group>"; };
+		08817F431E97D280001BF679 /* MSRequestToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSRequestToken.m; sourceTree = "<group>"; };
+		08817F451E97D2C2001BF679 /* MSRequestManagerConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSRequestManagerConstants.h; sourceTree = "<group>"; };
+		08817F471E97D34D001BF679 /* MSRequestManagerProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSRequestManagerProtocols.h; sourceTree = "<group>"; };
+		08817F481E97D3BD001BF679 /* MSRequestResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSRequestResponse.h; sourceTree = "<group>"; };
+		08817F491E97D3BD001BF679 /* MSRequestResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSRequestResponse.m; sourceTree = "<group>"; };
+		08817F4B1E97D4AA001BF679 /* MSRequestManager+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MSRequestManager+Private.h"; sourceTree = "<group>"; };
+		08C4C24B1E97C5E600C0CE77 /* HealthHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08C4C2671E97C71000C0CE77 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		08C4C2681E97C71000C0CE77 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		08C4C26A1E97C71000C0CE77 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		08C4C26B1E97C71000C0CE77 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		08C4C26D1E97C71000C0CE77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08C4C26E1E97C71000C0CE77 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08C4C26F1E97C71000C0CE77 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		08C4C2701E97C71000C0CE77 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		08C4C2711E97C71000C0CE77 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8809DCF394A7720495D2C6D9 /* Pods-HealthHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealthHelper/Pods-HealthHelper.debug.xcconfig"; sourceTree = "<group>"; };
+		B864817EC2CB9CA234571E2C /* Pods-HealthHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthHelper/Pods-HealthHelper.release.xcconfig"; sourceTree = "<group>"; };
+		E293BBF818D0AD957A737451 /* libPods-HealthHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HealthHelper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08C4C2481E97C5E600C0CE77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECD90B03EE4DAB3AF5537740 /* libPods-HealthHelper.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08817F3E1E97D117001BF679 /* RequestManager */ = {
+			isa = PBXGroup;
+			children = (
+				08817F451E97D2C2001BF679 /* MSRequestManagerConstants.h */,
+				08817F481E97D3BD001BF679 /* MSRequestResponse.h */,
+				08817F491E97D3BD001BF679 /* MSRequestResponse.m */,
+				08817F421E97D280001BF679 /* MSRequestToken.h */,
+				08817F431E97D280001BF679 /* MSRequestToken.m */,
+				08817F471E97D34D001BF679 /* MSRequestManagerProtocols.h */,
+				08817F4B1E97D4AA001BF679 /* MSRequestManager+Private.h */,
+				08817F3F1E97D198001BF679 /* MSRequestManager.h */,
+				08817F401E97D198001BF679 /* MSRequestManager.m */,
+			);
+			path = RequestManager;
+			sourceTree = "<group>";
+		};
+		08C4C2421E97C5E600C0CE77 = {
+			isa = PBXGroup;
+			children = (
+				08C4C27A1E97C8FD00C0CE77 /* HealthHelperCore */,
+				08C4C2651E97C71000C0CE77 /* HealthHelper */,
+				08C4C24C1E97C5E600C0CE77 /* Products */,
+				67473C73A015FB472A263F8A /* Pods */,
+				F320A326ADFB84C8187EB4BC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		08C4C24C1E97C5E600C0CE77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08C4C24B1E97C5E600C0CE77 /* HealthHelper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08C4C2651E97C71000C0CE77 /* HealthHelper */ = {
+			isa = PBXGroup;
+			children = (
+				08C4C2661E97C71000C0CE77 /* AppDelegate */,
+				08C4C2691E97C71000C0CE77 /* Source */,
+				08C4C26C1E97C71000C0CE77 /* Supporting Files */,
+			);
+			path = HealthHelper;
+			sourceTree = "<group>";
+		};
+		08C4C2661E97C71000C0CE77 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				08C4C2671E97C71000C0CE77 /* AppDelegate.h */,
+				08C4C2681E97C71000C0CE77 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		08C4C2691E97C71000C0CE77 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				08817F3E1E97D117001BF679 /* RequestManager */,
+				08C4C26A1E97C71000C0CE77 /* ViewController.h */,
+				08C4C26B1E97C71000C0CE77 /* ViewController.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		08C4C26C1E97C71000C0CE77 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				08C4C26D1E97C71000C0CE77 /* Assets.xcassets */,
+				08C4C26E1E97C71000C0CE77 /* Info.plist */,
+				08C4C26F1E97C71000C0CE77 /* LaunchScreen.storyboard */,
+				08C4C2701E97C71000C0CE77 /* main.m */,
+				08C4C2711E97C71000C0CE77 /* Main.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		08C4C27A1E97C8FD00C0CE77 /* HealthHelperCore */ = {
+			isa = PBXGroup;
+			children = (
+				08C4C27B1E97C8FD00C0CE77 /* Core Data */,
+			);
+			path = HealthHelperCore;
+			sourceTree = "<group>";
+		};
+		08C4C27B1E97C8FD00C0CE77 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		67473C73A015FB472A263F8A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8809DCF394A7720495D2C6D9 /* Pods-HealthHelper.debug.xcconfig */,
+				B864817EC2CB9CA234571E2C /* Pods-HealthHelper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F320A326ADFB84C8187EB4BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E293BBF818D0AD957A737451 /* libPods-HealthHelper.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08C4C24A1E97C5E600C0CE77 /* HealthHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08C4C2621E97C5E600C0CE77 /* Build configuration list for PBXNativeTarget "HealthHelper" */;
+			buildPhases = (
+				245E2D49C922D9AB9EAECFC7 /* [CP] Check Pods Manifest.lock */,
+				08C4C2471E97C5E600C0CE77 /* Sources */,
+				08C4C2481E97C5E600C0CE77 /* Frameworks */,
+				08C4C2491E97C5E600C0CE77 /* Resources */,
+				28E957061F6EBF4B26EDE357 /* [CP] Embed Pods Frameworks */,
+				60398723D8D04D6258C72709 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HealthHelper;
+			productName = HealthHelper;
+			productReference = 08C4C24B1E97C5E600C0CE77 /* HealthHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08C4C2431E97C5E600C0CE77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Maksym Savisko";
+				TargetAttributes = {
+					08C4C24A1E97C5E600C0CE77 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 4KQC9K68AM;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 08C4C2461E97C5E600C0CE77 /* Build configuration list for PBXProject "HealthHelper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 08C4C2421E97C5E600C0CE77;
+			productRefGroup = 08C4C24C1E97C5E600C0CE77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08C4C24A1E97C5E600C0CE77 /* HealthHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08C4C2491E97C5E600C0CE77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08C4C2761E97C71000C0CE77 /* LaunchScreen.storyboard in Resources */,
+				08C4C2741E97C71000C0CE77 /* Assets.xcassets in Resources */,
+				08C4C2781E97C71000C0CE77 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		245E2D49C922D9AB9EAECFC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		28E957061F6EBF4B26EDE357 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HealthHelper/Pods-HealthHelper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60398723D8D04D6258C72709 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HealthHelper/Pods-HealthHelper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08C4C2471E97C5E600C0CE77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08C4C2731E97C71000C0CE77 /* ViewController.m in Sources */,
+				08817F441E97D280001BF679 /* MSRequestToken.m in Sources */,
+				08817F411E97D198001BF679 /* MSRequestManager.m in Sources */,
+				08C4C2771E97C71000C0CE77 /* main.m in Sources */,
+				08817F4A1E97D3BD001BF679 /* MSRequestResponse.m in Sources */,
+				08C4C2721E97C71000C0CE77 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		08C4C2601E97C5E600C0CE77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		08C4C2611E97C5E600C0CE77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		08C4C2631E97C5E600C0CE77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8809DCF394A7720495D2C6D9 /* Pods-HealthHelper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4KQC9K68AM;
+				INFOPLIST_FILE = "$(SRCROOT)/HealthHelper/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MaksymSavisko.HealthHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		08C4C2641E97C5E600C0CE77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B864817EC2CB9CA234571E2C /* Pods-HealthHelper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4KQC9K68AM;
+				INFOPLIST_FILE = "$(SRCROOT)/HealthHelper/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MaksymSavisko.HealthHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08C4C2461E97C5E600C0CE77 /* Build configuration list for PBXProject "HealthHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08C4C2601E97C5E600C0CE77 /* Debug */,
+				08C4C2611E97C5E600C0CE77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08C4C2621E97C5E600C0CE77 /* Build configuration list for PBXNativeTarget "HealthHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08C4C2631E97C5E600C0CE77 /* Debug */,
+				08C4C2641E97C5E600C0CE77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08C4C2431E97C5E600C0CE77 /* Project object */;
+}

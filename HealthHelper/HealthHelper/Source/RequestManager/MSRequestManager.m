@@ -61,6 +61,35 @@
 
 #pragma mark - Private Base Methods
 
+- (void) GET:(NSString *)URLString
+  parameters:(nullable id)parameters
+    progress:(nullable void (^)(NSProgress *downloadProgress))downloadProgress
+     success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
+     failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure
+{
+    [self addActiveRequest:URLString];
+    
+    [self.manager GET:URLString parameters:parameters progress:downloadProgress
+              success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject)
+    {
+        if (success)
+        {
+            success (task, responseObject);
+        }
+    }
+              failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error)
+    {
+        [self removeActiveRequest:URLString];
+        
+        if (failure)
+        {
+            failure (task, error);
+        }
+        
+    }];
+    
+}
+
 - (void) POST:(NSString *)URLString
    parameters:(nullable id)parameters
       success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
@@ -190,6 +219,17 @@
     return MSRequestManagerServerAddressProduction;
 #endif
     
+}
+
+- (BOOL) isAuthorize
+{
+    return (self.accessToken.info.length);
+}
+
+- (BOOL) isOffline
+{
+    //TODO: Add Reachability
+    return NO;
 }
 
 

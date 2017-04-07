@@ -65,9 +65,9 @@
 				08817F421E97D280001BF679 /* MSRequestToken.h */,
 				08817F431E97D280001BF679 /* MSRequestToken.m */,
 				08817F471E97D34D001BF679 /* MSRequestManagerProtocols.h */,
+				08817F4B1E97D4AA001BF679 /* MSRequestManager+Private.h */,
 				08817F3F1E97D198001BF679 /* MSRequestManager.h */,
 				08817F401E97D198001BF679 /* MSRequestManager.m */,
-				08817F4B1E97D4AA001BF679 /* MSRequestManager+Private.h */,
 			);
 			path = RequestManager;
 			sourceTree = "<group>";

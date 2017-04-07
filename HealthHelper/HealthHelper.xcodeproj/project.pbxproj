@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08817F411E97D198001BF679 /* MSRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 08817F401E97D198001BF679 /* MSRequestManager.m */; };
+		08817F441E97D280001BF679 /* MSRequestToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 08817F431E97D280001BF679 /* MSRequestToken.m */; };
+		08817F4A1E97D3BD001BF679 /* MSRequestResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 08817F491E97D3BD001BF679 /* MSRequestResponse.m */; };
 		08C4C2721E97C71000C0CE77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C4C2681E97C71000C0CE77 /* AppDelegate.m */; };
 		08C4C2731E97C71000C0CE77 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C4C26B1E97C71000C0CE77 /* ViewController.m */; };
 		08C4C2741E97C71000C0CE77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08C4C26D1E97C71000C0CE77 /* Assets.xcassets */; };
@@ -17,6 +20,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08817F3F1E97D198001BF679 /* MSRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSRequestManager.h; sourceTree = "<group>"; };
+		08817F401E97D198001BF679 /* MSRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSRequestManager.m; sourceTree = "<group>"; };
+		08817F421E97D280001BF679 /* MSRequestToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSRequestToken.h; sourceTree = "<group>"; };
+		08817F431E97D280001BF679 /* MSRequestToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSRequestToken.m; sourceTree = "<group>"; };
+		08817F451E97D2C2001BF679 /* MSRequestManagerConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSRequestManagerConstants.h; sourceTree = "<group>"; };
+		08817F471E97D34D001BF679 /* MSRequestManagerProtocols.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSRequestManagerProtocols.h; sourceTree = "<group>"; };
+		08817F481E97D3BD001BF679 /* MSRequestResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSRequestResponse.h; sourceTree = "<group>"; };
+		08817F491E97D3BD001BF679 /* MSRequestResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSRequestResponse.m; sourceTree = "<group>"; };
+		08817F4B1E97D4AA001BF679 /* MSRequestManager+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MSRequestManager+Private.h"; sourceTree = "<group>"; };
 		08C4C24B1E97C5E600C0CE77 /* HealthHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HealthHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08C4C2671E97C71000C0CE77 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		08C4C2681E97C71000C0CE77 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -44,6 +56,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08817F3E1E97D117001BF679 /* RequestManager */ = {
+			isa = PBXGroup;
+			children = (
+				08817F451E97D2C2001BF679 /* MSRequestManagerConstants.h */,
+				08817F481E97D3BD001BF679 /* MSRequestResponse.h */,
+				08817F491E97D3BD001BF679 /* MSRequestResponse.m */,
+				08817F421E97D280001BF679 /* MSRequestToken.h */,
+				08817F431E97D280001BF679 /* MSRequestToken.m */,
+				08817F471E97D34D001BF679 /* MSRequestManagerProtocols.h */,
+				08817F3F1E97D198001BF679 /* MSRequestManager.h */,
+				08817F401E97D198001BF679 /* MSRequestManager.m */,
+				08817F4B1E97D4AA001BF679 /* MSRequestManager+Private.h */,
+			);
+			path = RequestManager;
+			sourceTree = "<group>";
+		};
 		08C4C2421E97C5E600C0CE77 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +113,7 @@
 		08C4C2691E97C71000C0CE77 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				08817F3E1E97D117001BF679 /* RequestManager */,
 				08C4C26A1E97C71000C0CE77 /* ViewController.h */,
 				08C4C26B1E97C71000C0CE77 /* ViewController.m */,
 			);
@@ -259,7 +288,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				08C4C2731E97C71000C0CE77 /* ViewController.m in Sources */,
+				08817F441E97D280001BF679 /* MSRequestToken.m in Sources */,
+				08817F411E97D198001BF679 /* MSRequestManager.m in Sources */,
 				08C4C2771E97C71000C0CE77 /* main.m in Sources */,
+				08817F4A1E97D3BD001BF679 /* MSRequestResponse.m in Sources */,
 				08C4C2721E97C71000C0CE77 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,6 +436,7 @@
 				08C4C2641E97C5E600C0CE77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -22,6 +22,6 @@
  *
  *  @return Singleton Instance of this class.
  */
-+ (instancetype)sharedInstance;
++ (instancetype) sharedInstance;
 
 @end

@@ -171,8 +171,8 @@
 		92B334FF1E98029E0062538C /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				920FBA1A1E9809E80082AF6F /* MSDataManagerProtocols.h */,
 				92B335031E9804A10062538C /* MSDataManagerConstants.h */,
+				920FBA1A1E9809E80082AF6F /* MSDataManagerProtocols.h */,
 				92B335001E9803050062538C /* MSDataManager.h */,
 				92B335011E9803050062538C /* MSDataManager.m */,
 				920FBA1B1E980CCA0082AF6F /* MSDataManager+Setup.h */,

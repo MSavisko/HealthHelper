@@ -31,7 +31,7 @@
 
 #pragma mark - Singleton
 
-+ (instancetype)sharedInstance
++ (instancetype) sharedInstance
 {
     static dispatch_once_t pred;
     static id sharedInstance = nil;
@@ -42,7 +42,7 @@
     return sharedInstance;
 }
 
-- (instancetype)initUniqueInstance
+- (instancetype) initUniqueInstance
 {
     self = [super init];
     
@@ -54,18 +54,18 @@
     return self;
 }
 
-- (id)copy
+- (id) copy
 {
     return self;
 }
 
 #pragma mark - Private Base Methods
 
-- (void) GET:(NSString *)URLString
-  parameters:(nullable id)parameters
-    progress:(nullable void (^)(NSProgress *downloadProgress))downloadProgress
-     success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
-     failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure
+- (void) GET:(NSString *) URLString
+  parameters:(nullable id) parameters
+    progress:(nullable void (^)(NSProgress *downloadProgress)) downloadProgress
+     success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject)) success
+     failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error)) failure
 {
     [self addActiveRequest:URLString];
     
@@ -90,10 +90,10 @@
     
 }
 
-- (void) POST:(NSString *)URLString
-   parameters:(nullable id)parameters
-      success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
-      failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure
+- (void) POST:(NSString *) URLString
+   parameters:(nullable id) parameters
+      success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject)) success
+      failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error)) failure
 {
     [self addActiveRequest:URLString];
     
@@ -117,10 +117,10 @@
      }];
 }
 
-- (void) PUT:(NSString *)URLString
-  parameters:(nullable id)parameters
-     success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
-     failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure
+- (void) PUT:(NSString *) URLString
+  parameters:(nullable id) parameters
+     success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject)) success
+     failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error)) failure
 {
     [self addActiveRequest:URLString];
     
@@ -146,12 +146,12 @@
 
 #pragma mark - Private Request Methods
 
-- (void)addActiveRequest:(NSString *)URLString
+- (void) addActiveRequest:(NSString *) URLString
 {
     [self.activeRequests addObject:URLString];
 }
 
-- (void)removeActiveRequest:(NSString *)URLString
+- (void) removeActiveRequest:(NSString *) URLString
 {
     if ([self.activeRequests containsObject:URLString])
     {
@@ -159,7 +159,7 @@
     }
 }
 
-- (BOOL)isActiveRequest:(NSString *)URLString
+- (BOOL) isActiveRequest:(NSString *) URLString
 {
     return ([self.activeRequests containsObject:URLString]);
 }
@@ -186,7 +186,7 @@
 
 #pragma mark - MSRequestManagerProtocol
 
-- (void) setAccessToken:(MSRequestToken *)accessToken
+- (void) setAccessToken:(MSRequestToken *) accessToken
 {
     _primitiveAccessToken = accessToken;
     [self.manager.requestSerializer setValue:accessToken.info forHTTPHeaderField:MSRequestManagerAccessTokenField];
@@ -210,7 +210,7 @@
     return nil;
 }
 
-- (NSString *)serverAddress
+- (NSString *) serverAddress
 {
     
 #ifdef DEBUG

@@ -16,6 +16,8 @@
 		08C4C2761E97C71000C0CE77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C4C26F1E97C71000C0CE77 /* LaunchScreen.storyboard */; };
 		08C4C2771E97C71000C0CE77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C4C2701E97C71000C0CE77 /* main.m */; };
 		08C4C2781E97C71000C0CE77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C4C2711E97C71000C0CE77 /* Main.storyboard */; };
+		920FBA1D1E980CCA0082AF6F /* MSDataManager+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 920FBA1C1E980CCA0082AF6F /* MSDataManager+Setup.m */; };
+		920FBA201E9815D60082AF6F /* MSDataManager+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 920FBA1F1E9815D60082AF6F /* MSDataManager+Private.m */; };
 		92B335021E9803050062538C /* MSDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B335011E9803050062538C /* MSDataManager.m */; };
 		ECD90B03EE4DAB3AF5537740 /* libPods-HealthHelper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E293BBF818D0AD957A737451 /* libPods-HealthHelper.a */; };
 /* End PBXBuildFile section */
@@ -42,6 +44,10 @@
 		08C4C2711E97C71000C0CE77 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8809DCF394A7720495D2C6D9 /* Pods-HealthHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealthHelper/Pods-HealthHelper.debug.xcconfig"; sourceTree = "<group>"; };
 		920FBA1A1E9809E80082AF6F /* MSDataManagerProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDataManagerProtocols.h; sourceTree = "<group>"; };
+		920FBA1B1E980CCA0082AF6F /* MSDataManager+Setup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MSDataManager+Setup.h"; sourceTree = "<group>"; };
+		920FBA1C1E980CCA0082AF6F /* MSDataManager+Setup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MSDataManager+Setup.m"; sourceTree = "<group>"; };
+		920FBA1E1E9815D60082AF6F /* MSDataManager+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MSDataManager+Private.h"; sourceTree = "<group>"; };
+		920FBA1F1E9815D60082AF6F /* MSDataManager+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MSDataManager+Private.m"; sourceTree = "<group>"; };
 		92B335001E9803050062538C /* MSDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDataManager.h; sourceTree = "<group>"; };
 		92B335011E9803050062538C /* MSDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDataManager.m; sourceTree = "<group>"; };
 		92B335031E9804A10062538C /* MSDataManagerConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSDataManagerConstants.h; sourceTree = "<group>"; };
@@ -66,13 +72,13 @@
 			children = (
 				08817F451E97D2C2001BF679 /* MSRequestManagerConstants.h */,
 				08817F471E97D34D001BF679 /* MSRequestManagerProtocols.h */,
+				08817F3F1E97D198001BF679 /* MSRequestManager.h */,
+				08817F401E97D198001BF679 /* MSRequestManager.m */,
+				08817F4B1E97D4AA001BF679 /* MSRequestManager+Private.h */,
 				08817F481E97D3BD001BF679 /* MSRequestResponse.h */,
 				08817F491E97D3BD001BF679 /* MSRequestResponse.m */,
 				08817F421E97D280001BF679 /* MSRequestToken.h */,
 				08817F431E97D280001BF679 /* MSRequestToken.m */,
-				08817F4B1E97D4AA001BF679 /* MSRequestManager+Private.h */,
-				08817F3F1E97D198001BF679 /* MSRequestManager.h */,
-				08817F401E97D198001BF679 /* MSRequestManager.m */,
 			);
 			path = RequestManager;
 			sourceTree = "<group>";
@@ -169,6 +175,10 @@
 				92B335031E9804A10062538C /* MSDataManagerConstants.h */,
 				92B335001E9803050062538C /* MSDataManager.h */,
 				92B335011E9803050062538C /* MSDataManager.m */,
+				920FBA1B1E980CCA0082AF6F /* MSDataManager+Setup.h */,
+				920FBA1C1E980CCA0082AF6F /* MSDataManager+Setup.m */,
+				920FBA1E1E9815D60082AF6F /* MSDataManager+Private.h */,
+				920FBA1F1E9815D60082AF6F /* MSDataManager+Private.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -305,10 +315,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				08C4C2731E97C71000C0CE77 /* ViewController.m in Sources */,
+				920FBA1D1E980CCA0082AF6F /* MSDataManager+Setup.m in Sources */,
 				08817F441E97D280001BF679 /* MSRequestToken.m in Sources */,
 				08817F411E97D198001BF679 /* MSRequestManager.m in Sources */,
 				08C4C2771E97C71000C0CE77 /* main.m in Sources */,
 				08817F4A1E97D3BD001BF679 /* MSRequestResponse.m in Sources */,
+				920FBA201E9815D60082AF6F /* MSDataManager+Private.m in Sources */,
 				92B335021E9803050062538C /* MSDataManager.m in Sources */,
 				08C4C2721E97C71000C0CE77 /* AppDelegate.m in Sources */,
 			);

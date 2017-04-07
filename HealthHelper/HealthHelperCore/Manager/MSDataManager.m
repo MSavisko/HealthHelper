@@ -8,7 +8,7 @@
 
 #import "MSDataManager.h"
 
-#import <MagicalRecord/MagicalRecord.h>
+#import "MSDataManager+Private.h"
 
 @implementation MSDataManager
 
@@ -16,7 +16,7 @@
 
 #pragma mark - Singleton
 
-+ (instancetype)sharedInstance
++ (instancetype) sharedInstance
 {
     static dispatch_once_t pred;
     static id sharedInstance = nil;
@@ -28,7 +28,7 @@
     return sharedInstance;
 }
 
-- (instancetype)initUniqueInstance
+- (instancetype) initUniqueInstance
 {
     self = [super init];
     
@@ -41,9 +41,16 @@
     return self;
 }
 
-- (id)copy
+- (id) copy
 {
     return self;
+}
+
+#pragma mark - MSDataManagerProtocol
+
+- (NSManagedObjectContext *) mainContext
+{
+    return [NSManagedObjectContext MR_defaultContext];
 }
 
 @end

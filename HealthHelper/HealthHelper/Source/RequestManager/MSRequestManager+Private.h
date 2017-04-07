@@ -14,28 +14,28 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - Private Base Methods
 
-- (void) GET:(NSString *)URLString
-  parameters:(nullable id)parameters
-    progress:(nullable void (^)(NSProgress *downloadProgress))downloadProgress
-     success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
-     failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
+- (void) GET:(NSString *) URLString
+  parameters:(nullable id) parameters
+    progress:(nullable void (^)(NSProgress *downloadProgress)) downloadProgress
+     success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject)) success
+     failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error)) failure;
 
-- (void) POST:(NSString *)URLString
-   parameters:(nullable id)parameters
-      success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
-      failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
+- (void) POST:(NSString *) URLString
+   parameters:(nullable id) parameters
+      success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject)) success
+      failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error)) failure;
 
-- (void) PUT:(NSString *)URLString
-  parameters:(nullable id)parameters
-     success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject))success
-     failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error))failure;
+- (void) PUT:(NSString *) URLString
+  parameters:(nullable id) parameters
+     success:(nullable void (^)(NSURLSessionDataTask *task, id _Nullable responseObject)) success
+     failure:(nullable void (^)(NSURLSessionDataTask * _Nullable task, NSError *error)) failure;
 
 
 #pragma mark - Private Request Methods
 
-- (void)addActiveRequest:(NSString *)URLString;
-- (void)removeActiveRequest:(NSString *)URLString;
-- (BOOL)isActiveRequest:(NSString *)URLString;
+- (void) addActiveRequest:(NSString *) URLString;
+- (void) removeActiveRequest:(NSString *) URLString;
+- (BOOL) isActiveRequest:(NSString *) URLString;
 
 #pragma mark - Private Call Methods
 

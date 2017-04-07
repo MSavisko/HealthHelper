@@ -9,6 +9,10 @@
 #ifndef MSDataManagerConstants_h
 #define MSDataManagerConstants_h
 
+@class NSManagedObjectContext;
+
 typedef void (^MSDataManagerVoidCompletionBlock)();
+
+typedef void (^MSDataManagerExecuteOnContextBlock)(NSManagedObjectContext *__nonnull context);
 
 #endif /* MSDataManagerConstants_h */

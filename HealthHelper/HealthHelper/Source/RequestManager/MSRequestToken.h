@@ -20,6 +20,6 @@ typedef NS_ENUM (NSInteger, MSRequestTokenType)
 @property (nonatomic, readonly) MSRequestTokenType tokenType;
 
 + (instancetype) defaultTokenWithShortInfo:(NSString *) info;
-+ (instancetype) tokenWithType:(MSRequestTokenType)type andShortInfo:(NSString *) info;
++ (instancetype) tokenWithType:(MSRequestTokenType) type andShortInfo:(NSString *) info;
 
 @end

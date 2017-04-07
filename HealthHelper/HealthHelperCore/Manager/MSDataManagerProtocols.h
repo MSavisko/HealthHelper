@@ -18,9 +18,19 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@protocol MSDataManagerSetupProtocol <NSObject>
+@protocol MSDataManagerPrivateProtocol <MSDataManagerProtocol>
 
-+ (void) setupWithCompletion:(MSDataManagerVoidCompletionBlock)completion;
++ (void) saveWithBlock:(MSDataManagerExecuteOnContextBlock) executionBlock;
++ (void) saveWithBlock:(MSDataManagerExecuteOnContextBlock) executionBlock useSerialQueue:(BOOL) useSerialQueue;
++ (void) saveWithBlock:(MSDataManagerExecuteOnContextBlock) executionBlock completion:(nullable MSDataManagerVoidCompletionBlock) completion;
++ (void) saveWithBlock:(MSDataManagerExecuteOnContextBlock) executionBlock serialQueue:(BOOL)useSerialQueue completion:(nullable MSDataManagerVoidCompletionBlock) completion;
+
+@end
+
+@protocol MSDataManagerSetupProtocol <MSDataManagerProtocol>
+
++ (void) setupWithCompletion:(nullable MSDataManagerVoidCompletionBlock) completion;
++ (void) setupAtStoreURL:(NSURL *) storeUrl completion:(nullable MSDataManagerVoidCompletionBlock) completion;
 
 @end
 

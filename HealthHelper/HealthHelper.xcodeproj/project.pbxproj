@@ -13,6 +13,7 @@
 		08C4C2761E97C71000C0CE77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C4C26F1E97C71000C0CE77 /* LaunchScreen.storyboard */; };
 		08C4C2771E97C71000C0CE77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C4C2701E97C71000C0CE77 /* main.m */; };
 		08C4C2781E97C71000C0CE77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C4C2711E97C71000C0CE77 /* Main.storyboard */; };
+		ECD90B03EE4DAB3AF5537740 /* libPods-HealthHelper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E293BBF818D0AD957A737451 /* libPods-HealthHelper.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		08C4C26F1E97C71000C0CE77 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08C4C2701E97C71000C0CE77 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		08C4C2711E97C71000C0CE77 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8809DCF394A7720495D2C6D9 /* Pods-HealthHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HealthHelper/Pods-HealthHelper.debug.xcconfig"; sourceTree = "<group>"; };
+		B864817EC2CB9CA234571E2C /* Pods-HealthHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-HealthHelper/Pods-HealthHelper.release.xcconfig"; sourceTree = "<group>"; };
+		E293BBF818D0AD957A737451 /* libPods-HealthHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HealthHelper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECD90B03EE4DAB3AF5537740 /* libPods-HealthHelper.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +50,8 @@
 				08C4C27A1E97C8FD00C0CE77 /* HealthHelperCore */,
 				08C4C2651E97C71000C0CE77 /* HealthHelper */,
 				08C4C24C1E97C5E600C0CE77 /* Products */,
+				67473C73A015FB472A263F8A /* Pods */,
+				F320A326ADFB84C8187EB4BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +118,23 @@
 			path = "Core Data";
 			sourceTree = "<group>";
 		};
+		67473C73A015FB472A263F8A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8809DCF394A7720495D2C6D9 /* Pods-HealthHelper.debug.xcconfig */,
+				B864817EC2CB9CA234571E2C /* Pods-HealthHelper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F320A326ADFB84C8187EB4BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E293BBF818D0AD957A737451 /* libPods-HealthHelper.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +142,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08C4C2621E97C5E600C0CE77 /* Build configuration list for PBXNativeTarget "HealthHelper" */;
 			buildPhases = (
+				245E2D49C922D9AB9EAECFC7 /* [CP] Check Pods Manifest.lock */,
 				08C4C2471E97C5E600C0CE77 /* Sources */,
 				08C4C2481E97C5E600C0CE77 /* Frameworks */,
 				08C4C2491E97C5E600C0CE77 /* Resources */,
+				28E957061F6EBF4B26EDE357 /* [CP] Embed Pods Frameworks */,
+				60398723D8D04D6258C72709 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -177,6 +204,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		245E2D49C922D9AB9EAECFC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		28E957061F6EBF4B26EDE357 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HealthHelper/Pods-HealthHelper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60398723D8D04D6258C72709 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HealthHelper/Pods-HealthHelper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		08C4C2471E97C5E600C0CE77 /* Sources */ = {
@@ -284,6 +359,7 @@
 		};
 		08C4C2631E97C5E600C0CE77 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8809DCF394A7720495D2C6D9 /* Pods-HealthHelper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4KQC9K68AM;
@@ -297,6 +373,7 @@
 		};
 		08C4C2641E97C5E600C0CE77 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B864817EC2CB9CA234571E2C /* Pods-HealthHelper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4KQC9K68AM;

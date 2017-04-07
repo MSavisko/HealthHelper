@@ -4,7 +4,7 @@ Test Health Helper App for iOS that show implementation for basic class, that ne
 # TODO:
 # Class
 - [x] Request Manager (AFNetworking)
-- [ ] Data Manager (Core Data).
+- [ ] Data Manager (Magical Record + Core Data).
 - [ ] Purchase Manager (StoreKit).
 - [ ] Calendar Manager (EventKit).
 - [ ] Authentication Manager (LocalAuthentication framework).

@@ -1,0 +1,3 @@
+#!/bin/sh
+DIR=$(cd "$(dirname "$0")"; pwd)
+mogenerator -m "$DIR/HealthHelper.xcdatamodeld/HealthHelper.xcdatamodel" -M "$DIR/Model/Machine" -H "$DIR/Model/Human" --template-var arc=true

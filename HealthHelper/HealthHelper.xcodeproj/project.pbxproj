@@ -18,6 +18,9 @@
 		08C4C2781E97C71000C0CE77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C4C2711E97C71000C0CE77 /* Main.storyboard */; };
 		920FBA1D1E980CCA0082AF6F /* MSDataManager+Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = 920FBA1C1E980CCA0082AF6F /* MSDataManager+Setup.m */; };
 		920FBA201E9815D60082AF6F /* MSDataManager+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 920FBA1F1E9815D60082AF6F /* MSDataManager+Private.m */; };
+		920FBA301E9832B40082AF6F /* HealthHelper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 920FBA2D1E9832B40082AF6F /* HealthHelper.xcdatamodeld */; };
+		920FBA431E9835840082AF6F /* HHUserManagedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 920FBA3F1E9835840082AF6F /* HHUserManagedModel.m */; };
+		920FBA441E9835840082AF6F /* _HHUserManagedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 920FBA421E9835840082AF6F /* _HHUserManagedModel.m */; };
 		92B335021E9803050062538C /* MSDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B335011E9803050062538C /* MSDataManager.m */; };
 		ECD90B03EE4DAB3AF5537740 /* libPods-HealthHelper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E293BBF818D0AD957A737451 /* libPods-HealthHelper.a */; };
 /* End PBXBuildFile section */
@@ -48,6 +51,12 @@
 		920FBA1C1E980CCA0082AF6F /* MSDataManager+Setup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MSDataManager+Setup.m"; sourceTree = "<group>"; };
 		920FBA1E1E9815D60082AF6F /* MSDataManager+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MSDataManager+Private.h"; sourceTree = "<group>"; };
 		920FBA1F1E9815D60082AF6F /* MSDataManager+Private.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MSDataManager+Private.m"; sourceTree = "<group>"; };
+		920FBA2E1E9832B40082AF6F /* HealthHelper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HealthHelper.xcdatamodel; sourceTree = "<group>"; };
+		920FBA321E9832D30082AF6F /* HealthHelper v1.1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "HealthHelper v1.1.xcdatamodel"; sourceTree = "<group>"; };
+		920FBA3E1E9835840082AF6F /* HHUserManagedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHUserManagedModel.h; sourceTree = "<group>"; };
+		920FBA3F1E9835840082AF6F /* HHUserManagedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHUserManagedModel.m; sourceTree = "<group>"; };
+		920FBA411E9835840082AF6F /* _HHUserManagedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _HHUserManagedModel.h; sourceTree = "<group>"; };
+		920FBA421E9835840082AF6F /* _HHUserManagedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _HHUserManagedModel.m; sourceTree = "<group>"; };
 		92B335001E9803050062538C /* MSDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDataManager.h; sourceTree = "<group>"; };
 		92B335011E9803050062538C /* MSDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDataManager.m; sourceTree = "<group>"; };
 		92B335031E9804A10062538C /* MSDataManagerConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSDataManagerConstants.h; sourceTree = "<group>"; };
@@ -152,20 +161,49 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		920FBA2C1E9832B40082AF6F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				920FBA3C1E9835840082AF6F /* Model */,
+				920FBA2D1E9832B40082AF6F /* HealthHelper.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		920FBA3C1E9835840082AF6F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				920FBA3D1E9835840082AF6F /* Human */,
+				920FBA401E9835840082AF6F /* Machine */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		920FBA3D1E9835840082AF6F /* Human */ = {
+			isa = PBXGroup;
+			children = (
+				920FBA3E1E9835840082AF6F /* HHUserManagedModel.h */,
+				920FBA3F1E9835840082AF6F /* HHUserManagedModel.m */,
+			);
+			path = Human;
+			sourceTree = "<group>";
+		};
+		920FBA401E9835840082AF6F /* Machine */ = {
+			isa = PBXGroup;
+			children = (
+				920FBA411E9835840082AF6F /* _HHUserManagedModel.h */,
+				920FBA421E9835840082AF6F /* _HHUserManagedModel.m */,
+			);
+			path = Machine;
+			sourceTree = "<group>";
+		};
 		92B334FD1E98029E0062538C /* HealthHelperCore */ = {
 			isa = PBXGroup;
 			children = (
-				92B334FE1E98029E0062538C /* Core Data */,
+				920FBA2C1E9832B40082AF6F /* CoreData */,
 				92B334FF1E98029E0062538C /* Manager */,
 			);
 			path = HealthHelperCore;
-			sourceTree = "<group>";
-		};
-		92B334FE1E98029E0062538C /* Core Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Core Data";
 			sourceTree = "<group>";
 		};
 		92B334FF1E98029E0062538C /* Manager */ = {
@@ -314,12 +352,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				920FBA431E9835840082AF6F /* HHUserManagedModel.m in Sources */,
 				08C4C2731E97C71000C0CE77 /* ViewController.m in Sources */,
 				920FBA1D1E980CCA0082AF6F /* MSDataManager+Setup.m in Sources */,
 				08817F441E97D280001BF679 /* MSRequestToken.m in Sources */,
 				08817F411E97D198001BF679 /* MSRequestManager.m in Sources */,
 				08C4C2771E97C71000C0CE77 /* main.m in Sources */,
+				920FBA301E9832B40082AF6F /* HealthHelper.xcdatamodeld in Sources */,
 				08817F4A1E97D3BD001BF679 /* MSRequestResponse.m in Sources */,
+				920FBA441E9835840082AF6F /* _HHUserManagedModel.m in Sources */,
 				920FBA201E9815D60082AF6F /* MSDataManager+Private.m in Sources */,
 				92B335021E9803050062538C /* MSDataManager.m in Sources */,
 				08C4C2721E97C71000C0CE77 /* AppDelegate.m in Sources */,
@@ -469,6 +510,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		920FBA2D1E9832B40082AF6F /* HealthHelper.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				920FBA321E9832D30082AF6F /* HealthHelper v1.1.xcdatamodel */,
+				920FBA2E1E9832B40082AF6F /* HealthHelper.xcdatamodel */,
+			);
+			currentVersion = 920FBA2E1E9832B40082AF6F /* HealthHelper.xcdatamodel */;
+			path = HealthHelper.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 08C4C2431E97C5E600C0CE77 /* Project object */;
 }

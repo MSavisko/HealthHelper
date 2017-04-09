@@ -11,3 +11,5 @@ Test Health Helper App for iOS that show implementation for basic class, that ne
    - [x] Appcoda tutorial http://www.appcoda.com/ios-event-kit-programming-tutorial/
 - [ ] LocalAuthentication framework.
 - [ ] HealthKit.
+   - [x] WWDC. Introducing HealthKit https://developer.apple.com/videos/play/wwdc2014/203/
+   - [ ] 

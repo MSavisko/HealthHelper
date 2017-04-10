@@ -9,6 +9,6 @@
 #import <StoreKit/StoreKit.h>
 #import "MSDetailedDescriptionProtocol.h"
 
-@interface SKProduct (MS)
+@interface SKProduct (MS) <MSDetailedDescriptionProtocol>
 
 @end

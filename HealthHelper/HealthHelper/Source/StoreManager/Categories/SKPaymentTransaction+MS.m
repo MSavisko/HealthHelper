@@ -49,7 +49,7 @@
 
 - (NSString *)ms_detailedDescription
 {
-    static NSString *const PVSeparator = @"\n";
+    static NSString *const MSSeparator = @"\n";
     
     NSString *stateString = [self.class ms_stringFromTransactionState:self.transactionState];
     
@@ -90,7 +90,7 @@
             [downloadsDescription addObject:obj.ms_detailedDescription];
         }];
         
-        [components addObject:[downloadsDescription componentsJoinedByString:PVSeparator]];
+        [components addObject:[downloadsDescription componentsJoinedByString:MSSeparator]];
     }
     
     if ( self.transactionDate )
@@ -104,7 +104,7 @@
     }
     
     
-    return [components componentsJoinedByString:PVSeparator];
+    return [components componentsJoinedByString:MSSeparator];
 }
 
 

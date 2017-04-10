@@ -11,6 +11,12 @@
 		0865A7221E9B79BC0081A7B0 /* SKPayment+MS.m in Sources */ = {isa = PBXBuildFile; fileRef = 0865A7211E9B79BC0081A7B0 /* SKPayment+MS.m */; };
 		0865A7251E9B79FA0081A7B0 /* SKPaymentTransaction+MS.m in Sources */ = {isa = PBXBuildFile; fileRef = 0865A7241E9B79FA0081A7B0 /* SKPaymentTransaction+MS.m */; };
 		0865A7281E9B7AB50081A7B0 /* SKProduct+MS.m in Sources */ = {isa = PBXBuildFile; fileRef = 0865A7271E9B7AB50081A7B0 /* SKProduct+MS.m */; };
+		0865A7311E9B7C040081A7B0 /* RMAppReceipt.m in Sources */ = {isa = PBXBuildFile; fileRef = 0865A7301E9B7C040081A7B0 /* RMAppReceipt.m */; };
+		0865A73A1E9B7D250081A7B0 /* MSStoreAppReceiptVerifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 0865A7391E9B7D250081A7B0 /* MSStoreAppReceiptVerifier.m */; };
+		0865A73D1E9B7DBF0081A7B0 /* MSStoreKeychainPersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 0865A73C1E9B7DBF0081A7B0 /* MSStoreKeychainPersistence.m */; };
+		0865A7401E9B7E810081A7B0 /* MSStoreDownloadsPersistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 0865A73F1E9B7E810081A7B0 /* MSStoreDownloadsPersistence.m */; };
+		0865A7431E9B7F2D0081A7B0 /* MSProductStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 0865A7421E9B7F2D0081A7B0 /* MSProductStatus.m */; };
+		0865A7481E9B814A0081A7B0 /* MSStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0865A7471E9B814A0081A7B0 /* MSStoreManager.m */; };
 		08817F411E97D198001BF679 /* MSRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 08817F401E97D198001BF679 /* MSRequestManager.m */; };
 		08817F441E97D280001BF679 /* MSRequestToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 08817F431E97D280001BF679 /* MSRequestToken.m */; };
 		08817F4A1E97D3BD001BF679 /* MSRequestResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 08817F491E97D3BD001BF679 /* MSRequestResponse.m */; };
@@ -39,6 +45,19 @@
 		0865A7241E9B79FA0081A7B0 /* SKPaymentTransaction+MS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKPaymentTransaction+MS.m"; sourceTree = "<group>"; };
 		0865A7261E9B7AB50081A7B0 /* SKProduct+MS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKProduct+MS.h"; sourceTree = "<group>"; };
 		0865A7271E9B7AB50081A7B0 /* SKProduct+MS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKProduct+MS.m"; sourceTree = "<group>"; };
+		0865A72F1E9B7C040081A7B0 /* RMAppReceipt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMAppReceipt.h; sourceTree = "<group>"; };
+		0865A7301E9B7C040081A7B0 /* RMAppReceipt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMAppReceipt.m; sourceTree = "<group>"; };
+		0865A7381E9B7D250081A7B0 /* MSStoreAppReceiptVerifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSStoreAppReceiptVerifier.h; sourceTree = "<group>"; };
+		0865A7391E9B7D250081A7B0 /* MSStoreAppReceiptVerifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSStoreAppReceiptVerifier.m; sourceTree = "<group>"; };
+		0865A73B1E9B7DBF0081A7B0 /* MSStoreKeychainPersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSStoreKeychainPersistence.h; sourceTree = "<group>"; };
+		0865A73C1E9B7DBF0081A7B0 /* MSStoreKeychainPersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSStoreKeychainPersistence.m; sourceTree = "<group>"; };
+		0865A73E1E9B7E810081A7B0 /* MSStoreDownloadsPersistence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSStoreDownloadsPersistence.h; sourceTree = "<group>"; };
+		0865A73F1E9B7E810081A7B0 /* MSStoreDownloadsPersistence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSStoreDownloadsPersistence.m; sourceTree = "<group>"; };
+		0865A7411E9B7F2D0081A7B0 /* MSProductStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSProductStatus.h; sourceTree = "<group>"; };
+		0865A7421E9B7F2D0081A7B0 /* MSProductStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSProductStatus.m; sourceTree = "<group>"; };
+		0865A7441E9B7FCA0081A7B0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0865A7461E9B814A0081A7B0 /* MSStoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSStoreManager.h; sourceTree = "<group>"; };
+		0865A7471E9B814A0081A7B0 /* MSStoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSStoreManager.m; sourceTree = "<group>"; };
 		08817F3F1E97D198001BF679 /* MSRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSRequestManager.h; sourceTree = "<group>"; };
 		08817F401E97D198001BF679 /* MSRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSRequestManager.m; sourceTree = "<group>"; };
 		08817F421E97D280001BF679 /* MSRequestToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSRequestToken.h; sourceTree = "<group>"; };
@@ -93,6 +112,18 @@
 			isa = PBXGroup;
 			children = (
 				0865A71B1E9B78FF0081A7B0 /* Categories */,
+				0865A72F1E9B7C040081A7B0 /* RMAppReceipt.h */,
+				0865A7301E9B7C040081A7B0 /* RMAppReceipt.m */,
+				0865A7461E9B814A0081A7B0 /* MSStoreManager.h */,
+				0865A7471E9B814A0081A7B0 /* MSStoreManager.m */,
+				0865A7411E9B7F2D0081A7B0 /* MSProductStatus.h */,
+				0865A7421E9B7F2D0081A7B0 /* MSProductStatus.m */,
+				0865A7381E9B7D250081A7B0 /* MSStoreAppReceiptVerifier.h */,
+				0865A7391E9B7D250081A7B0 /* MSStoreAppReceiptVerifier.m */,
+				0865A73B1E9B7DBF0081A7B0 /* MSStoreKeychainPersistence.h */,
+				0865A73C1E9B7DBF0081A7B0 /* MSStoreKeychainPersistence.m */,
+				0865A73E1E9B7E810081A7B0 /* MSStoreDownloadsPersistence.h */,
+				0865A73F1E9B7E810081A7B0 /* MSStoreDownloadsPersistence.m */,
 			);
 			path = StoreManager;
 			sourceTree = "<group>";
@@ -262,6 +293,7 @@
 		F320A326ADFB84C8187EB4BC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0865A7441E9B7FCA0081A7B0 /* CoreGraphics.framework */,
 				E293BBF818D0AD957A737451 /* libPods-HealthHelper.a */,
 			);
 			name = Frameworks;
@@ -391,21 +423,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				920FBA431E9835840082AF6F /* HHUserManagedModel.m in Sources */,
+				0865A7401E9B7E810081A7B0 /* MSStoreDownloadsPersistence.m in Sources */,
 				08C4C2731E97C71000C0CE77 /* ViewController.m in Sources */,
 				920FBA1D1E980CCA0082AF6F /* MSDataManager+Setup.m in Sources */,
 				0865A7281E9B7AB50081A7B0 /* SKProduct+MS.m in Sources */,
 				08817F441E97D280001BF679 /* MSRequestToken.m in Sources */,
+				0865A73D1E9B7DBF0081A7B0 /* MSStoreKeychainPersistence.m in Sources */,
 				08817F411E97D198001BF679 /* MSRequestManager.m in Sources */,
 				0865A7251E9B79FA0081A7B0 /* SKPaymentTransaction+MS.m in Sources */,
 				08C4C2771E97C71000C0CE77 /* main.m in Sources */,
 				0865A71E1E9B79190081A7B0 /* SKDownload+MS.m in Sources */,
+				0865A7431E9B7F2D0081A7B0 /* MSProductStatus.m in Sources */,
 				920FBA301E9832B40082AF6F /* HealthHelper.xcdatamodeld in Sources */,
 				08817F4A1E97D3BD001BF679 /* MSRequestResponse.m in Sources */,
 				920FBA441E9835840082AF6F /* _HHUserManagedModel.m in Sources */,
+				0865A7481E9B814A0081A7B0 /* MSStoreManager.m in Sources */,
+				0865A73A1E9B7D250081A7B0 /* MSStoreAppReceiptVerifier.m in Sources */,
 				0865A7221E9B79BC0081A7B0 /* SKPayment+MS.m in Sources */,
 				920FBA201E9815D60082AF6F /* MSDataManager+Private.m in Sources */,
 				92B335021E9803050062538C /* MSDataManager.m in Sources */,
 				08C4C2721E97C71000C0CE77 /* AppDelegate.m in Sources */,
+				0865A7311E9B7C040081A7B0 /* RMAppReceipt.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

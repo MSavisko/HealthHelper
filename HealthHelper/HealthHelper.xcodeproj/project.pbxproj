@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0865A71E1E9B79190081A7B0 /* SKDownload+MS.m in Sources */ = {isa = PBXBuildFile; fileRef = 0865A71D1E9B79190081A7B0 /* SKDownload+MS.m */; };
+		0865A7221E9B79BC0081A7B0 /* SKPayment+MS.m in Sources */ = {isa = PBXBuildFile; fileRef = 0865A7211E9B79BC0081A7B0 /* SKPayment+MS.m */; };
+		0865A7251E9B79FA0081A7B0 /* SKPaymentTransaction+MS.m in Sources */ = {isa = PBXBuildFile; fileRef = 0865A7241E9B79FA0081A7B0 /* SKPaymentTransaction+MS.m */; };
+		0865A7281E9B7AB50081A7B0 /* SKProduct+MS.m in Sources */ = {isa = PBXBuildFile; fileRef = 0865A7271E9B7AB50081A7B0 /* SKProduct+MS.m */; };
 		08817F411E97D198001BF679 /* MSRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 08817F401E97D198001BF679 /* MSRequestManager.m */; };
 		08817F441E97D280001BF679 /* MSRequestToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 08817F431E97D280001BF679 /* MSRequestToken.m */; };
 		08817F4A1E97D3BD001BF679 /* MSRequestResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 08817F491E97D3BD001BF679 /* MSRequestResponse.m */; };
@@ -26,6 +30,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0865A71C1E9B79190081A7B0 /* SKDownload+MS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKDownload+MS.h"; sourceTree = "<group>"; };
+		0865A71D1E9B79190081A7B0 /* SKDownload+MS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKDownload+MS.m"; sourceTree = "<group>"; };
+		0865A71F1E9B79390081A7B0 /* MSDetailedDescriptionProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSDetailedDescriptionProtocol.h; sourceTree = "<group>"; };
+		0865A7201E9B79BC0081A7B0 /* SKPayment+MS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKPayment+MS.h"; sourceTree = "<group>"; };
+		0865A7211E9B79BC0081A7B0 /* SKPayment+MS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKPayment+MS.m"; sourceTree = "<group>"; };
+		0865A7231E9B79FA0081A7B0 /* SKPaymentTransaction+MS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKPaymentTransaction+MS.h"; sourceTree = "<group>"; };
+		0865A7241E9B79FA0081A7B0 /* SKPaymentTransaction+MS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKPaymentTransaction+MS.m"; sourceTree = "<group>"; };
+		0865A7261E9B7AB50081A7B0 /* SKProduct+MS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKProduct+MS.h"; sourceTree = "<group>"; };
+		0865A7271E9B7AB50081A7B0 /* SKProduct+MS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKProduct+MS.m"; sourceTree = "<group>"; };
 		08817F3F1E97D198001BF679 /* MSRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSRequestManager.h; sourceTree = "<group>"; };
 		08817F401E97D198001BF679 /* MSRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSRequestManager.m; sourceTree = "<group>"; };
 		08817F421E97D280001BF679 /* MSRequestToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSRequestToken.h; sourceTree = "<group>"; };
@@ -76,6 +89,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0865A71A1E9B78FF0081A7B0 /* StoreManager */ = {
+			isa = PBXGroup;
+			children = (
+				0865A71B1E9B78FF0081A7B0 /* Categories */,
+			);
+			path = StoreManager;
+			sourceTree = "<group>";
+		};
+		0865A71B1E9B78FF0081A7B0 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				0865A71F1E9B79390081A7B0 /* MSDetailedDescriptionProtocol.h */,
+				0865A71C1E9B79190081A7B0 /* SKDownload+MS.h */,
+				0865A71D1E9B79190081A7B0 /* SKDownload+MS.m */,
+				0865A7201E9B79BC0081A7B0 /* SKPayment+MS.h */,
+				0865A7211E9B79BC0081A7B0 /* SKPayment+MS.m */,
+				0865A7231E9B79FA0081A7B0 /* SKPaymentTransaction+MS.h */,
+				0865A7241E9B79FA0081A7B0 /* SKPaymentTransaction+MS.m */,
+				0865A7261E9B7AB50081A7B0 /* SKProduct+MS.h */,
+				0865A7271E9B7AB50081A7B0 /* SKProduct+MS.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		08817F3E1E97D117001BF679 /* RequestManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +170,7 @@
 		08C4C2691E97C71000C0CE77 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				0865A71A1E9B78FF0081A7B0 /* StoreManager */,
 				08817F3E1E97D117001BF679 /* RequestManager */,
 				08C4C26A1E97C71000C0CE77 /* ViewController.h */,
 				08C4C26B1E97C71000C0CE77 /* ViewController.m */,
@@ -355,12 +393,16 @@
 				920FBA431E9835840082AF6F /* HHUserManagedModel.m in Sources */,
 				08C4C2731E97C71000C0CE77 /* ViewController.m in Sources */,
 				920FBA1D1E980CCA0082AF6F /* MSDataManager+Setup.m in Sources */,
+				0865A7281E9B7AB50081A7B0 /* SKProduct+MS.m in Sources */,
 				08817F441E97D280001BF679 /* MSRequestToken.m in Sources */,
 				08817F411E97D198001BF679 /* MSRequestManager.m in Sources */,
+				0865A7251E9B79FA0081A7B0 /* SKPaymentTransaction+MS.m in Sources */,
 				08C4C2771E97C71000C0CE77 /* main.m in Sources */,
+				0865A71E1E9B79190081A7B0 /* SKDownload+MS.m in Sources */,
 				920FBA301E9832B40082AF6F /* HealthHelper.xcdatamodeld in Sources */,
 				08817F4A1E97D3BD001BF679 /* MSRequestResponse.m in Sources */,
 				920FBA441E9835840082AF6F /* _HHUserManagedModel.m in Sources */,
+				0865A7221E9B79BC0081A7B0 /* SKPayment+MS.m in Sources */,
 				920FBA201E9815D60082AF6F /* MSDataManager+Private.m in Sources */,
 				92B335021E9803050062538C /* MSDataManager.m in Sources */,
 				08C4C2721E97C71000C0CE77 /* AppDelegate.m in Sources */,

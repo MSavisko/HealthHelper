@@ -48,7 +48,16 @@
     
     if ( self )
     {
+        AFHTTPSessionManager *afManager = [AFHTTPSessionManager manager];
+        afManager.requestSerializer = [AFJSONRequestSerializer serializer];
+        (afManager.requestSerializer).cachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
+        [afManager.requestSerializer setValue:MSRequestManagerContentType forHTTPHeaderField:MSRequestManagerContentTypeField];
         
+        _manager = afManager;
+        
+        _activeRequests = [NSMutableArray array];
+        
+        [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
     }
     
     return self;
